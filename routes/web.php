@@ -61,3 +61,13 @@ Route::post('/update-profile', 'DriverController@update')->name('update.profile'
 // Change Password -- driver
 Route::get('/driver-change-password', 'DriverController@changepassword')->name('driver.change.password');
 Route::post('/driver-update-password', 'DriverController@updatepassword')->name('driver.update.password');
+
+
+// Warehouse
+// Profile Routes -- warehouse
+Route::get('/edit-warehouse-profile', 'WarehouseController@index')->name('edit.warehouse.profile');
+Route::post('/update-warehouse-profile', 'WarehouseController@update')->name('update.warehouse.profile');
+
+// Change Password -- warehouse
+Route::get('/warehouse-change-password', 'WarehouseController@changepassword')->name('warehouse.change.password');
+Route::post('/warehouse-update-password', 'WarehouseController@updatepassword')->name('warehouse.update.password');
